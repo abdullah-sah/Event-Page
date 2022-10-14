@@ -1,0 +1,168 @@
+/* Note that styling is mobile-first
+NTS: Remember to add media queries for tablet + desktop
+*/
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-rows: 1fr 8fr 1fr;
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	font-size: 7vw;
+	font-family: 'Arizonia', cursive;
+}
+
+header {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	font-size: 7vw;
+	margin-bottom: 0;
+}
+
+header h4 {
+	font-size: 2vw;
+	margin-top: 0;
+}
+
+.burger {
+	padding-top: 2vw;
+	position: absolute;
+	z-index: 1;
+}
+
+.burger img {
+	width: 8vw;
+	height: 8vw;
+}
+
+.menu {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40vw;
+	background-color: lightgrey;
+	border-radius: 0px 8px 8px 0px;
+	padding: 10vw 5vw 5vw 0vw;
+}
+
+
+/* Classes for hiding and showing the burger menu */
+.show-menu {
+	margin-left: 0;
+	transition: 0.3s background ease-in-out, 0.3s margin ease-in-out;
+}
+
+.hide-menu {
+	margin-left: -45vw;
+	transition: 0.3s background ease-in-out, 0.3s margin ease-in-out;
+}
+
+
+
+/* Giving/removing background to whole page when js eventlistener fires
+	NOTE: body starts with class of "remove-grey-bg"
+*/
+.grey-bg {
+	background-color: #5E6472;
+	transition: 0.3s background ease-in-out;
+}
+
+.remove-grey-bg {
+	background-color: white;
+	transition: 0.3s background ease-in-out;
+}
+
+
+
+
+/* Styling first and last ".category elements" to give them border-radius */
+.category:first-child {
+	border-radius: 0px 8px 0px 0px;
+}
+
+.category:last-child {
+	border-radius: 0px 0px 8px 0px;
+}
+
+.category {
+	width: 100%;
+	padding: 1%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	background-color: darkgrey;
+}
+
+.category p {
+	width: 100%;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-align: center;
+	font-size: 4vw;
+}
+
+.category-img {
+	width: 30px;
+	height: 30px;
+	margin-left: 2vw;
+}
+
+
+/* class for rotating burger-menu img */
+.rotate180 {
+	transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+/* Styling for cards: */
+#cards-container {
+	width: 100vw;
+	height: 77vh;
+	display: grid;
+	justify-content: center;
+}
+
+.card {
+	width: 70vw;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card img {
+	width: 85%;
+}
+
+.date {
+	position: absolute;
+	font-size: 2.6vw;
+	padding-right: 5px;
+	color: #373F47;
+	align-self: flex-end;
+}

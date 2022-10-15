@@ -67,7 +67,6 @@ header h4 {
 .show-menu {
 	margin-left: 0;
 	z-index: 1;
-	
 	transition: 0.3s background ease-in-out, 0.3s margin ease-in-out;
 }
 
@@ -77,33 +76,15 @@ header h4 {
 }
 
 
+.navbar {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
 
-/* Giving/removing background to whole page when js eventlistener fires
-	NOTE: body starts with class of "remove-grey-bg"
-*/
-/* .grey-bg {
-	background-color: #5E6472;
+.darken-bg {
+	background: rgba(55, 63, 71, 0.7);
 	transition: 0.3s background ease-in-out;
-}
-
-.remove-grey-bg {
-	background-color: white;
-	transition: 0.3s background ease-in-out;
-} */
-
-.opacity {
-	opacity: 0.6;
-	background-color: #5E6472;
-	transition: 0.3s background ease-in-out, 0.3s opacity ease-in-out;
-}
-
-.remove-opacity {
-	background-color: white;
-	transition: 0.3s background ease-in-out, 0.3s opacity ease-in-out;
-}
-
-.categories {
-	position: absolute;
 }
 
 

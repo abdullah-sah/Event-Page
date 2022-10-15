@@ -36,12 +36,7 @@ const addCategories = () => {
 burgerMenu.addEventListener('click', (e) => {
 	menu.classList.toggle('hide-menu');
 	menu.classList.toggle('show-menu');
-	// body.classList.toggle('grey-bg');
-	// body.classList.toggle('remove-grey-bg');
-	// cardsContainer.classList.toggle('grey-bg');
-	// cardsContainer.classList.toggle('remove-grey-bg');
-	mainWrapper.classList.toggle('opacity');
-	mainWrapper.classList.toggle('remove-opacity');
+	categoriesSection.classList.toggle('darken-bg');
 });
 
 

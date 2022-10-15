@@ -7,6 +7,7 @@ NTS: Remember to add media queries for tablet + desktop
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #D2D8B3;
 	display: grid;
 	grid-template-rows: 1fr 8fr 1fr;
 	width: 100vw;
@@ -41,9 +42,10 @@ header h4 {
 }
 
 .burger {
+	pointer-events: auto;
 	padding-top: 2vw;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 }
 
 .burger img {
@@ -60,12 +62,14 @@ header h4 {
 	background-color: lightgrey;
 	border-radius: 0px 8px 8px 0px;
 	padding: 10vw 5vw 5vw 0vw;
+	pointer-events: auto;
 }
 
 
 /* Classes for hiding and showing the burger menu */
 .show-menu {
 	margin-left: 0;
+	z-index: 1;
 	transition: 0.3s background ease-in-out, 0.3s margin ease-in-out;
 }
 
@@ -75,21 +79,17 @@ header h4 {
 }
 
 
-
-/* Giving/removing background to whole page when js eventlistener fires
-	NOTE: body starts with class of "remove-grey-bg"
-*/
-.grey-bg {
-	background-color: #5E6472;
-	transition: 0.3s background ease-in-out;
+.navbar {
+	position: fixed;
+	pointer-events: none;
+	width: 100vw;
+	height: 100vh;
 }
 
-.remove-grey-bg {
-	background-color: white;
+.darken-bg {
+	background: rgba(55, 63, 71, 0.7);
 	transition: 0.3s background ease-in-out;
 }
-
-
 
 
 /* Styling first and last ".category elements" to give them border-radius */
@@ -149,10 +149,18 @@ header h4 {
 
 .card {
 	width: 70vw;
+	background-color: #6C91C2;
+	margin-bottom: 10%;
+	margin-top: 10%;
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.card p {
+	padding-left: 4%;
+	padding-right: 4%;
 }
 
 .card img {

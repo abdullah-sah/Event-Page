@@ -7,6 +7,7 @@ NTS: Remember to add media queries for tablet + desktop
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #D2D8B3;
 	display: grid;
 	grid-template-rows: 1fr 8fr 1fr;
 	width: 100vw;
@@ -145,10 +146,18 @@ header h4 {
 
 .card {
 	width: 70vw;
+	background-color: #6C91C2;
+	margin-bottom: 10%;
+	margin-top: 10%;
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.card p {
+	padding-left: 4%;
+	padding-right: 4%;
 }
 
 .card img {

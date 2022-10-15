@@ -1,4 +1,4 @@
-const main = document.querySelector('main');
+const mainWrapper = document.querySelector('.main-wrapper');
 const body = document.querySelector('body');
 const menu = document.querySelector('.menu');
 const categoriesSection = document.querySelector('.categories');
@@ -36,10 +36,12 @@ const addCategories = () => {
 burgerMenu.addEventListener('click', (e) => {
 	menu.classList.toggle('hide-menu');
 	menu.classList.toggle('show-menu');
-	body.classList.toggle('grey-bg');
-	body.classList.toggle('remove-grey-bg');
-	cardsContainer.classList.toggle('grey-bg');
-	cardsContainer.classList.toggle('remove-grey-bg');
+	// body.classList.toggle('grey-bg');
+	// body.classList.toggle('remove-grey-bg');
+	// cardsContainer.classList.toggle('grey-bg');
+	// cardsContainer.classList.toggle('remove-grey-bg');
+	mainWrapper.classList.toggle('opacity');
+	mainWrapper.classList.toggle('remove-opacity');
 });
 
 

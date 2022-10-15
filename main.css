@@ -43,7 +43,7 @@ header h4 {
 .burger {
 	padding-top: 2vw;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 }
 
 .burger img {
@@ -66,6 +66,8 @@ header h4 {
 /* Classes for hiding and showing the burger menu */
 .show-menu {
 	margin-left: 0;
+	z-index: 1;
+	
 	transition: 0.3s background ease-in-out, 0.3s margin ease-in-out;
 }
 
@@ -79,7 +81,7 @@ header h4 {
 /* Giving/removing background to whole page when js eventlistener fires
 	NOTE: body starts with class of "remove-grey-bg"
 */
-.grey-bg {
+/* .grey-bg {
 	background-color: #5E6472;
 	transition: 0.3s background ease-in-out;
 }
@@ -87,9 +89,22 @@ header h4 {
 .remove-grey-bg {
 	background-color: white;
 	transition: 0.3s background ease-in-out;
+} */
+
+.opacity {
+	opacity: 0.6;
+	background-color: #5E6472;
+	transition: 0.3s background ease-in-out, 0.3s opacity ease-in-out;
 }
 
+.remove-opacity {
+	background-color: white;
+	transition: 0.3s background ease-in-out, 0.3s opacity ease-in-out;
+}
 
+.categories {
+	position: absolute;
+}
 
 
 /* Styling first and last ".category elements" to give them border-radius */

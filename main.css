@@ -186,3 +186,50 @@ header h3 {
 	color: #373F47;
 	align-self: flex-end;
 }
+
+
+
+/* For large phones and medium tablets: */
+@media (min-width: 540px) and (max-width: 700px) {
+	.category p {
+		font-size: 3vw;
+	}
+}
+
+
+
+/* For large tablets and laptops */
+@media (min-width: 701px) and (max-width: 910px) {
+	.category p {
+		font-size: 2.2vw;
+	}
+
+	#cards-container {
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	
+}
+
+
+/* For desktops+ */
+
+@media (min-width: 911px) {
+	.category-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.category p {
+		font-size: 1.8vw;
+	}
+
+	.menu {
+		width: 100vw;
+		height: 20vh;
+		background: transparent;
+	}
+}

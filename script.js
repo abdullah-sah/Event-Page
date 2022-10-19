@@ -1,6 +1,7 @@
 const mainWrapper = document.querySelector('.main-wrapper');
 const body = document.querySelector('body');
 const menu = document.querySelector('.menu');
+const categoryContainer = document.querySelector('.category-container');
 const navBar = document.querySelector('.navbar');
 const burgerMenu = document.querySelector('.burger');
 const cardsContainer = document.querySelector('#cards-container');
@@ -44,7 +45,7 @@ const createCategory = ({ title, icon, alt }) => {
 }
 
 const addCategories = () => {
-	categories.forEach(value => menu.append(createCategory(value)));
+	categories.forEach(value => categoryContainer.append(createCategory(value)));
 }
 
 burgerMenu.addEventListener('click', (e) => {

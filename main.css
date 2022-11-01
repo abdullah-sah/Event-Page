@@ -235,9 +235,22 @@ header h3 {
 /* For desktops+ */
 
 @media (min-width: 911px) {
+	.burger {
+		display: none;
+	}
+
+	.navbar {
+		width: 100vw;
+	}
+
+	.hide-menu {
+		margin: 0;
+	}
+
 	.category-container {
 		display: flex;
 		flex-direction: row;
+		width: 100vw;
 	}
 
 	.category p {
@@ -248,5 +261,12 @@ header h3 {
 		width: 100vw;
 		height: 20vh;
 		background: transparent;
+		padding: 0;
 	}
+
+	/* #cards-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto;
+	} */
 }
